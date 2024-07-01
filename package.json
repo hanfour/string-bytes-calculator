@@ -1,0 +1,16 @@
+{
+  "name": "string-bytes-calculator",
+  "version": "1.0.0",
+  "description": "A flexible string byte length calculator with customizable configurations",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["string", "bytes", "calculator", "unicode"],
+  "author": "Hanfour Huang",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
