@@ -97,3 +97,5 @@ The default set of special character ranges.
 ## License 許可證
 
 MIT
+
+[![npm version](https://badge.fury.io/js/string-bytes-calculator.svg)](https://badge.fury.io/js/string-bytes-calculator)

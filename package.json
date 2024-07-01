@@ -2,6 +2,14 @@
   "name": "string-bytes-calculator",
   "version": "1.0.0",
   "description": "A flexible string byte length calculator with customizable configurations",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanfour/string-bytes-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hanfour/string-bytes-calculator/issues"
+  },
+  "homepage": "https://github.com/hanfour/string-bytes-calculator#readme",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
@@ -11,6 +19,6 @@
   "author": "Hanfour Huang",
   "license": "MIT",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.14.0"
   }
 }
