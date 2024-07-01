@@ -7,53 +7,69 @@ A flexible string byte length calculator with customizable configurations for di
 
 To install the package, run:
 
-`pnpm add string-bytes-calculator`
+```pnpm add string-bytes-calculator```
 
 ## Usage 使用方法
 
 Here's a basic example of how to use the package:
 
-`import { 
+```
+import { 
   getStringBytes, 
   updateConfig, 
   getConfig, 
   addSpecialCharRange, 
   resetSpecialCharRanges,
   defaultSpecialCharRanges
-} from 'string-bytes-calculator';`
+} from 'string-bytes-calculator';
+```
 
 Use with default configuration
 
-`console.log(getStringBytes("Hello, 世界!")); `
+```
+console.log(getStringBytes("Hello, 世界!"));
+```
 
 Update configuration
 
-`updateConfig({ 
+```
+updateConfig({ 
   ascii: 2, 
   chinese: 3, 
   other: 4,
   specialCharRanges: [[0x3000, 0x303F]] // Only consider CJK symbols and punctuation
-});`
+});
+```
 
 Use with updated configuration
 
-`console.log(getStringBytes("Hello, 世界!")); `
+```
+console.log(getStringBytes("Hello, 世界!"));
+```
 
 Add a new special character range
 
-`addSpecialCharRange(0x2000, 0x206F); `
+```
+addSpecialCharRange(0x2000, 0x206F);
+```
 
 Reset special character ranges to default
 
-`resetSpecialCharRanges();`
+```
+resetSpecialCharRanges();
+```
 
 Get current configuration
 
-`console.log(getConfig());`
+```
+console.log(getConfig());
+```
 
 View default special character ranges
 
-`console.log(defaultSpecialCharRanges);`
+```
+console.log(defaultSpecialCharRanges);
+```
 
 ## API
 
