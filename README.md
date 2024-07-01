@@ -13,39 +13,46 @@ To install the package, run:
 
 Here's a basic example of how to use the package:
 
-import { 
+`import { 
   getStringBytes, 
   updateConfig, 
   getConfig, 
   addSpecialCharRange, 
   resetSpecialCharRanges,
   defaultSpecialCharRanges
-} from 'string-bytes-calculator';
+} from 'string-bytes-calculator';`
 
-// Use with default configuration
-console.log(getStringBytes("Hello, 世界!")); 
+Use with default configuration
 
-// Update configuration
-updateConfig({ 
+`console.log(getStringBytes("Hello, 世界!")); `
+
+Update configuration
+
+`updateConfig({ 
   ascii: 2, 
   chinese: 3, 
   other: 4,
   specialCharRanges: [[0x3000, 0x303F]] // Only consider CJK symbols and punctuation
-});
+});`
 
 Use with updated configuration
+
 `console.log(getStringBytes("Hello, 世界!")); `
 
 Add a new special character range
+
 `addSpecialCharRange(0x2000, 0x206F); `
 
 Reset special character ranges to default
+
 `resetSpecialCharRanges();`
 
 Get current configuration
+
 `console.log(getConfig());`
 
 View default special character ranges
+
 `console.log(defaultSpecialCharRanges);`
 
 ## API
