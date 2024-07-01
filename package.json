@@ -1,6 +1,6 @@
 {
   "name": "string-bytes-calculator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A flexible string byte length calculator with customizable configurations",
   "repository": {
     "type": "git",
@@ -15,7 +15,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["string", "bytes", "calculator", "unicode"],
+  "keywords": [
+    "string",
+    "bytes",
+    "calculator",
+    "unicode"
+  ],
   "author": "Hanfour Huang",
   "license": "MIT",
   "engines": {
